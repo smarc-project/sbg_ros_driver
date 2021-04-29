@@ -128,6 +128,10 @@ install(TARGETS sbg_device sbg_device_mag
    RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
+catkin_install_python(PROGRAMS scripts/sbg_to_ros.py
+  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+)
+
 ## Mark cpp header files for installation
 install(DIRECTORY include/${PROJECT_NAME}/
   DESTINATION ${CATKIN_PACKAGE_INCLUDE_DESTINATION}
